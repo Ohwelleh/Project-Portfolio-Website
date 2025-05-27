@@ -11,18 +11,11 @@ function Projects() {
     <div className="project-container">
       <h1>Projects</h1>
       <div className="projects">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard
+          testSocial="Google"
+          testLink="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjxh7Hq0sSNAxVoFzQIHdsSINQQPAgI"
+        />
+        <ProjectCard testSocial="Fake" testLink="" />
       </div>
     </div>
   );
