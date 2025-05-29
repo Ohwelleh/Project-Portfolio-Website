@@ -1,10 +1,7 @@
-function SocialButton({
-  social,
-  socialLink,
-}: {
-  social: string;
-  socialLink: string;
-}) {
+// Custom type
+import type { SocialInfo } from "../custom types/Project";
+
+function SocialButton({ social }: { social: SocialInfo }) {
   function handleOnClick(link: string) {
     if (link === "") {
       alert("Error: No link available.");
@@ -14,7 +11,11 @@ function SocialButton({
     }
   }
 
-  return <button onClick={() => handleOnClick(socialLink)}>{social}</button>;
+  return (
+    <button onClick={() => handleOnClick(social.socialLink)}>
+      {social.socialName}
+    </button>
+  );
 }
 
 export default SocialButton;

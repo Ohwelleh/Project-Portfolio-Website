@@ -1,4 +1,4 @@
-type SocialInfo = {
+export type SocialInfo = {
   /**
    * Social name.
    */
@@ -11,13 +11,17 @@ type SocialInfo = {
 
 export type Project = {
   /**
+   * Unique identifer for each project
+   */
+  id: number;
+  /**
    * Project Name.
    */
   name: string;
   /**
    * Links to social sites.
    */
-  socials?: SocialInfo[];
+  socials: SocialInfo[];
   /**
    * Information about the project
    */
