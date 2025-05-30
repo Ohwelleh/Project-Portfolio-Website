@@ -8,6 +8,7 @@ import type { Project } from "../custom types/Project";
 import "../css/ProjectCard.css";
 
 function ProjectCard({ project }: { project: Project }) {
+  // TODO: Longer name push the information and button past container. Figure out how to adjust the name text
   return (
     <div key={project.id} className="project-card">
       <h1>{project.name}</h1>
