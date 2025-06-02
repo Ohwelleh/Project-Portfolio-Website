@@ -23,6 +23,10 @@ export type Project = {
    */
   socials: SocialInfo[];
   /**
+   * The technology used for creating the project.
+   */
+  tech: string[];
+  /**
    * Information about the project
    */
   description: string;

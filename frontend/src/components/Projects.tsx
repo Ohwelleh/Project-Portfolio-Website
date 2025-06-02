@@ -15,7 +15,6 @@ function Projects() {
   const [convertedData, setConvertedData] = useState<Project[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  // TODO: See if you can fetch the data from the JSON location using Async/Await.
   useEffect(() => {
     const myProjects: Project[] = [];
     ProjectData.data.forEach((proj) => {
@@ -29,12 +28,14 @@ function Projects() {
         id: -1,
         name: "",
         socials: newSocial,
+        tech: [],
         description: "",
       };
       newProject.id = proj.id;
       newProject.name = proj.name;
       newProject.socials[0].socialName = proj.social[0].socialName;
       newProject.socials[0].socialLink = proj.social[0].socialLink;
+      newProject.tech = proj.tech;
       newProject.description = proj.description;
 
       myProjects.push(newProject);

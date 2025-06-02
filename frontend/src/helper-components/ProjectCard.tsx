@@ -9,13 +9,18 @@ import "../css/ProjectCard.css";
 
 function ProjectCard({ project }: { project: Project }) {
   // TODO: Longer name push the information and button past container. Figure out how to adjust the name text.
-  // TODO: Add a 'Technologies' section to the card to describe the programming languages/Databases/libraries used in the project.
+  // TODO: Adjust the sizing based off the biggest project. Since the project info is static.
   return (
     <div key={project.id} className="project-card">
       <h1>{project.name}</h1>
       <div className="project-card-grid">
         <div className="project-card-info">
           <p>{project.description}</p>
+          <p>
+            <b>Technologies: </b>
+            {project.tech}
+          </p>
+          <p>sdad</p>
           <SocialButton social={project.socials[0]} />
         </div>
       </div>

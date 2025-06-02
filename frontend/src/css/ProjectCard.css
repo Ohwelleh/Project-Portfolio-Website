@@ -20,7 +20,7 @@
 }
 
 .project-card:hover{
-    max-height: 500px;
+    max-height: fit-content;
     transition: max-height 0.25s ease-in;
 }
 
