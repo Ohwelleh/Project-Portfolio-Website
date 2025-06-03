@@ -1,2 +1,2 @@
 # Project-Portfolio-Website
-React portfolio website
+ON HOLD WHILE I DEVELOP MORE PROJECTS TO FURTHER MY EXPERIENCE.
